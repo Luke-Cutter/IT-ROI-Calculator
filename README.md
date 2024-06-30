@@ -9,13 +9,13 @@ Features
 * Formatted output with comma-separated values for better readability
 
 How to Use
-
-* Clone the repository or download the HTML, CSS, and JavaScript files.
+1. Go to https://luke-cutter.github.io/IT-ROI-Calculator/ (Skip to step 2)
+* Alternatively, Clone the repository or download the HTML, CSS, and JavaScript files.
 * Open the HTML file in a web browser.
-* Enter the required information in the input fields.
-* Toggle the checkboxes for Code Churn Reduction, Productivity Improvement, and Outsourcing if applicable.
-* Click the "Calculate" button to generate the ROI report.
-* View the calculated values in the results section.
+2. Enter the required information in the input fields.
+3. Toggle the checkboxes for Code Churn Reduction, Productivity Improvement, and Outsourcing if applicable.
+4. Click the "Calculate" button to generate the ROI report.
+5. View the calculated values in the results section.
 
 Customization
 The calculator can be easily customized to fit specific requirements. The HTML file provides the structure and layout, while the CSS file handles the styling. The JavaScript file contains the logic for calculations and user interactions. Feel free to modify the code to add new features, change the styling, or integrate it into your existing web application.
