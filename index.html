@@ -13,7 +13,7 @@
     <div id="wrapper">
         <h1>Offshore IT Development ROI Calculator</h1>
         <div id="initial">
-            <h3>Expenses</h3>
+            <h3>Step 1: Expenses</h3>
             <div class="expensesDiv">
                 <label for="numDevelopers">Number of Developers:</label>
                 <input class="typed" type="number" id="numDevelopers" required value="300">
@@ -50,7 +50,7 @@
             </div>
 
 
-            <h3>Savings</h3>
+            <h3>Step 2: Savings</h3>
             <div class="savingsDiv">
                 <input type="checkbox" id="codeChurnReductionToggle" onchange="toggleInput('codeChurnReduction')">
                 <label for="codeChurnReductionToggle">Code Churn Reduction %:</label>
@@ -81,7 +81,19 @@
             </div>
             <button onclick="calculateROI()">Calculate ROI</button>
         </div>
-        <div id="results"></div>
+        <div id="results">
+            <h2>Step 3: Results</h2>
+            <p><strong>Total Cost:</strong></p>
+            <p><strong>Code Churn Savings:</strong></p>
+            <p><strong>Technical Debt Savings:</strong></p>
+            <p><strong>Productivity Gains:</strong></p>
+            <p><strong>Outsourcing Savings:</strong></p>
+            <p><strong>Total Savings and Gains:</strong></p>
+            <p><strong>ROI:</strong></p>
+            <p><strong>ROI Ratio:</strong></p>
+            <p><strong>Payback Period:</strong></p>
+            <p><strong>Net Present Value (NPV):</strong></p>
+        </div>
 
         <h2 id="leadh2">How to Use</h2>
         <p class="info">
