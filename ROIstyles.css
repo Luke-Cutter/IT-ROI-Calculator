@@ -1,0 +1,80 @@
+body {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: black;
+    background-color: transparent;
+}
+
+#wrapper {
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#leadh2 {
+    margin-top: 505px;
+}
+
+h2 {
+    padding: 15px;
+}
+
+h1, h2, h3 {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #ffaaab;
+    border: 2px solid #ff5e6c;
+}
+
+label, input, button {
+    font-size: 12px;
+}
+
+h3, label, input, button, p {
+    margin-left: 10px;
+}
+
+#initial {
+    float: left;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-left: 2px solid #feb300;
+}
+
+#results {
+    float: right;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-right: 2px solid #feb300;
+}
+
+#initial, #results {
+    width: 49.75%;
+    height: 475px;
+    padding: 0;
+    border-top: 2px solid #feb300;
+    border-bottom: 2px solid #feb300;
+}
+
+.info, button {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.info {
+    border: 2px solid #feb300;
+}
+
+#initial, #results, p {
+    background-color: #fff5d7;
+}
