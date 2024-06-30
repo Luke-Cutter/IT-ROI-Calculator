@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -13,72 +14,72 @@
         <h1>IT Corporation ROI Calculator</h1>
         <div id="initial">
             <h3>Expenses</h3>
-            <div>
+            <div class="expensesDiv">
                 <label for="numDevelopers">Number of Developers:</label>
-                <input type="number" id="numDevelopers" required>
+                <input class="typed" type="number" id="numDevelopers" required value="300">
             </div>
 
-            <div>
+            <div class="expensesDiv">
                 <label for="avgSalary">Average Annual Salary:</label>
-                <input type="number" id="avgSalary" required>
+                <input class="typed" type="number" id="avgSalary" required value="129536">
             </div>
 
-            <div>
-                <label for="recruitmentCostPct">Recruitment Cost Percentage:</label>
-                <input type="number" id="recruitmentCostPct" required>
+            <div class="expensesDiv">
+                <label for="recruitmentCostPct">Recruitment Cost %:</label>
+                <input class="typed" type="number" id="recruitmentCostPct" required value="22">
             </div>
 
-            <div>
-                <label for="hrCost">HR Cost per Employee:</label>
-                <input type="number" id="hrCost" required>
+            <div class="expensesDiv">
+                <label for="hrCost">Total HR Salaries/ Expenses:</label>
+                <input class="typed" type="number" id="hrCost" required value="25000">
             </div>
 
-            <div>
-                <label for="technicalDebtPct">Technical Debt Percentage:</label>
-                <input type="number" id="technicalDebtPct" required>
+            <div class="expensesDiv">
+                <label for="technicalDebtPct">Technical Debt %:</label>
+                <input class="typed" type="number" id="technicalDebtPct" required value="34">
             </div>
 
-            <div>
+            <div class="expensesDiv">
                 <label for="discountRate">Discount Rate (for NPV):</label>
-                <input type="number" id="discountRate" required>
+                <input class="typed" type="number" id="discountRate" required value="12">
             </div>
 
-            <div>
+            <div class="expensesDiv">
                 <label for="lifespan">Strategy Lifespan (years for NPV):</label>
-                <input type="number" id="lifespan" required>
+                <input class="typed" type="number" id="lifespan" required value="3">
             </div>
 
 
             <h3>Savings</h3>
-            <div>
+            <div class="savingsDiv">
                 <input type="checkbox" id="codeChurnReductionToggle" onchange="toggleInput('codeChurnReduction')">
                 <label for="codeChurnReductionToggle">Code Churn Reduction %:</label>
-                <input type="number" id="codeChurnReduction" disabled>
+                <input class="typed" type="number" id="codeChurnReduction" disabled>
             </div>
 
-            <div>
+            <div class="savingsDiv">
                 <input type="checkbox" id="productivityImprovementToggle" onchange="toggleInput('productivityImprovement')">
-                <label for="productivityImprovementToggle">Productivity Improvement %:</label>
-                <input type="number" id="productivityImprovement" disabled>
+                <label for="productivityImprovementToggle">Productivity Increase %:</label>
+                <input class="typed" type="number" id="productivityImprovement" disabled>
             </div>
 
-            <div>
+            <div class="savingsDiv">
                 <input type="checkbox" id="outsourcingToggle" onchange="toggleOutsourcing()">
                 <label for="outsourcingToggle">Outsourcing:</label>
             </div>
 
-            <div id="outsourcingFields" style="display: none;">
+            <div id="outsourcingFields" class="savingsDiv" style="display: none;">
                 <div>
-                    <label for="outsourcingPct">Outsourcing Percentage:</label>
-                    <input type="number" id="outsourcingPct">
+                    <label for="outsourcingPct">Outsourcing %:</label>
+                    <input class="typed" type="number" id="outsourcingPct">
                 </div>
 
-                <div>
-                    <label for="outsourcingCostReduction">Outsourcing Cost Reduction:</label>
-                    <input type="number" id="outsourcingCostReduction">
+                <div class="savingsDiv">
+                    <label for="outsourcingCostReduction">Outsourcing Cost Reduction %</label>
+                    <input class="typed" type="number" id="outsourcingCostReduction">
                 </div>
             </div>
-            <button onclick="calculateROI()">Calculate</button>
+            <button onclick="calculateROI()">Calculate ROI</button>
         </div>
         <div id="results"></div>
 
@@ -86,7 +87,7 @@
         <p class="info">
             1. Enter the required information in the input fields.<br>
             2. Toggle the checkboxes for Code Churn Reduction, Productivity Improvement, and Outsourcing if applicable.<br>
-            3. Click the "Calculate" button to generate the ROI report.<br>
+            3. Click the "Calculate ROI" button to generate the ROI report.<br>
             4. View the calculated values in the results section to the right.
         </p>
 
@@ -94,8 +95,8 @@
         <p class="info">
             <strong>Number of Developers:</strong> The total number of developers in your software development team.<br>
             <strong>Average Annual Salary:</strong> The average annual salary of a developer in your organization.<br>
-            <strong>Recruitment Cost Percentage:</strong> The recruitment cost as a percentage of the average annual salary.<br>
-            <strong>HR Cost per Employee:</strong> The annual HR cost per developer.<br>
+            <strong>Recruitment Cost Percentage:</strong> The cost paid out to recruiters as a percentage of the average annual salary of the new hires.<br>
+            <strong>HR Cost per Employee:</strong> The annual cost of HR salaries and expenses<br>
             <strong>Code Churn Reduction:</strong> The estimated percentage reduction in code churn and rework. Enable the checkbox to include this in the calculation.<br>
             <strong>Technical Debt Percentage:</strong> The percentage of resources consumed by technical debt.<br>
             <strong>Productivity Improvement:</strong> The estimated percentage improvement in developer productivity. Enable the checkbox to include this in the calculation.<br>
