@@ -79,7 +79,7 @@ function calculateROI() {
     // Display results
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
-    <h2>Step 3: Results</h2>
+    <h3>Step 3: Results</h3>
     <p><strong>Total Cost:</strong> $${addCommas(totalCost.toFixed(2))}</p>
     <p><strong>Code Churn Savings:</strong> $${addCommas(codeChurnSavings.toFixed(2))}</p>
     <p><strong>Technical Debt Savings:</strong> $${addCommas(technicalDebtSavings.toFixed(2))}</p>
