@@ -15,7 +15,7 @@ h1, h2 {
 }
 
 #leadh2 {
-    margin-top: 505px;
+    margin-top: 530px;
 }
 
 h2 {
@@ -60,7 +60,7 @@ h3, label, input, button, p {
 
 #initial, #results {
     width: 49.75%;
-    height: 530px;
+    height: 515px;
     padding: 0;
     border-top: 2px solid #feb300;
     border-bottom: 2px solid #feb300;
