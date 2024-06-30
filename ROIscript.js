@@ -86,7 +86,7 @@ function calculateROI() {
     <p><strong>Productivity Gains:</strong> $${addCommas(productivityGains.toFixed(2))}</p>
     <p><strong>Outsourcing Savings:</strong> $${addCommas(outsourcingSavings.toFixed(2))}</p>
     <p><strong>Total Savings and Gains:</strong> $${addCommas(totalSavingsGains.toFixed(2))}</p>
-    <p><strong>ROI:</strong> ${roi.toFixed(2)}%</p>
+    <p><span class="roi-border"><strong>ROI: </strong>${roi.toFixed(2)}%</span></p>
     <p><strong>ROI Ratio:</strong> ${roiRatio.toFixed(2)}</p>
     <p><strong>Payback Period:</strong> ${paybackPeriod.toFixed(2)} months</p>
     <p><strong>Net Present Value (NPV):</strong> $${addCommas(npv.toFixed(2))}</p>
