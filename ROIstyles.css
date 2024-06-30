@@ -41,7 +41,7 @@ label, input, button {
 }
 
 h3, label, input, button, p {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 #initial {
@@ -60,7 +60,7 @@ h3, label, input, button, p {
 
 #initial, #results {
     width: 49.75%;
-    height: 475px;
+    height: 500px;
     padding: 0;
     border-top: 2px solid #feb300;
     border-bottom: 2px solid #feb300;
@@ -73,8 +73,18 @@ h3, label, input, button, p {
 
 .info {
     border: 2px solid #feb300;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #initial, #results, p {
     background-color: #fff5d7;
+}
+
+.typed {
+    float: right;
+}
+
+.expensesDiv, savingsDiv{
+    margin-top: 10px;
 }
