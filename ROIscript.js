@@ -69,6 +69,11 @@ function calculateROI() {
     const outsourcingSavings = totalCost * (parseFloat(outsourcingPct) / 100) * (parseFloat(outsourcingCostReduction) / 100);
     const totalSavingsGains = codeChurnSavings + technicalDebtSavings + productivityGains + outsourcingSavings;
 
+    if (totalSavingsGains <= 0) {
+        alert('Total savings and gains must be greater than zero to calculate ROI and NPV.');
+        return;
+    }
+
     const roi = (totalSavingsGains / totalCost) * 100;
     const roiRatio = totalSavingsGains / totalCost;
     const paybackPeriod = (totalCost / totalSavingsGains) * 12; // Convert to months
