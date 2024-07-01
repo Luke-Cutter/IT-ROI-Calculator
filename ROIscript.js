@@ -15,7 +15,7 @@ function toggleOutsourcing() {
 }
 
 function isValidNumber(value) {
-    return !isNaN(parseFloat(value)) && isFinite(value) && value > 0;
+    return !isNaN(parseFloat(value)) && isFinite(value) && value >= 0;
 }
 
 function addCommas(number) {
