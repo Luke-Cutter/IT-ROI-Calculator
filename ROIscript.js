@@ -39,19 +39,19 @@ function calculateROI() {
     }
 
     const codeChurnReduction = document.getElementById('codeChurnReductionToggle').checked
-        ? document.getElementById('codeChurnReduction').value
+        ? parseFloat(document.getElementById('codeChurnReduction').value)
         : 0;
 
     const productivityImprovement = document.getElementById('productivityImprovementToggle').checked
-        ? document.getElementById('productivityImprovement').value
+        ? parseFloat(document.getElementById('productivityImprovement').value)
         : 0;
 
     const outsourcingPct = document.getElementById('outsourcingToggle').checked
-        ? document.getElementById('outsourcingPct').value
+        ? parseFloat(document.getElementById('outsourcingPct').value)
         : 0;
 
     const outsourcingCostReduction = document.getElementById('outsourcingToggle').checked
-        ? document.getElementById('outsourcingCostReduction').value
+        ? parseFloat(document.getElementById('outsourcingCostReduction').value)
         : 0;
 
     if ((document.getElementById('codeChurnReductionToggle').checked && !isValidNumber(codeChurnReduction)) ||
