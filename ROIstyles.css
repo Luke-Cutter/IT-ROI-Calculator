@@ -6,7 +6,7 @@ body {
 
 #wrapper {
     width: 800px;
-    height: 700px;
+    height: 1000px;
     margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@ h1, h2, h3 {
 }
 
 #leadh2 {
-    margin-top: 550px;
+    margin-top: 565px;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h1, h2, h3 {
     font-family: Arial Black, Arial Bold, Gadget, sans-serif;
 }
 
-h3 {
+.steps {
     font-size: 24px;
     background-color: white;
     border-radius: 15px;
@@ -100,3 +100,4 @@ h3, label, input, button, p {
     border: 2px solid #feb300;
     padding: 4px;
 }
+#disclaimer {width: 800px;}
