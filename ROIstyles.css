@@ -38,8 +38,12 @@ button {
     border: 2px solid #ff5e6c;
 }
 
-button, input {
+button, .toggles {
     cursor: pointer;
+}
+
+.typed {
+    cursor: text;
 }
 
 label, input, button {
