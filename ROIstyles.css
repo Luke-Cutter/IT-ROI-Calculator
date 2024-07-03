@@ -1,13 +1,23 @@
 body {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     color: black;
-    background-color: transparent;
+}
+
+body, .steps, .roi-border {
+    background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
 }
 
 #wrapper {
-    width: 800px;
     height: 1000px;
     margin: 0 auto;
+}
+
+#wrapper, #disclaimer {
+    width: 800px;
 }
 
 h1, h2, h3 {
@@ -15,32 +25,29 @@ h1, h2, h3 {
 }
 
 #leadh2 {
-    margin-top: 565px;
-}
-
-h2 {
-    padding: 15px;
-}
-
-h1, h2, h3 {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    margin-top: 575px;
 }
 
 .steps {
     font-size: 24px;
-    background-color: white;
-    border-radius: 15px;
     width: 250px;
 }
 
 button {
-    margin-top: 10px;
     background-color: #ffaaab;
     border: 2px solid #ff5e6c;
 }
 
+button, input {
+    cursor: pointer;
+}
+
 label, input, button {
     font-size: 12px;
+}
+
+.expensesDiv, savingsDiv, button {
+    margin-top: 10px;
 }
 
 h3, label, input, button, p {
@@ -55,7 +62,6 @@ h3, label, input, button, p {
 }
 
 #results {
-    float: right;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-right: 2px solid #feb300;
@@ -69,35 +75,31 @@ h3, label, input, button, p {
     border-bottom: 2px solid #feb300;
 }
 
-.info, button {
+.typed, #results {
+    float: right;
+}
+
+.info, button, h2 {
     padding: 10px;
 }
 
-.info, button, h3 {
+.info, button, h3, .steps {
     border-radius: 15px;
 }
 
 .info, h3 {
-    border: 2px solid #feb300;
     margin-left: auto;
     margin-right: auto;
+}
+
+.info, h3, .roi-border {
+    border: 2px solid #feb300;
 }
 
 #initial, #results, .info {
     background-color: #fff5d7;
 }
 
-.typed {
-    float: right;
-}
-
-.expensesDiv, savingsDiv{
-    margin-top: 10px;
-}
-
 .roi-border {
-    background-color: white;
-    border: 2px solid #feb300;
     padding: 4px;
 }
-#disclaimer {width: 800px;}
